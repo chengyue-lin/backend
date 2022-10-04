@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html>
+<head>
+    <style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 15px;
+        }
+    th{
+        text-align: left;
+    }
+    caption {
+        font-size: 160%;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h3>Post a new staff information </h3>
+
+    <div style="background-color: gray;">
+        <form action="upload" method="POST" enctype="multipart/form-data">
+            Upload File: <br/>
+            <input type="file" name="file">
+            <label for="staff">staffid:</label>
+            <input type="text" id="staff" name="staffid">
+            <label for="na">name:</label>
+            <input type="text" id="na" name="name" >
+            <label for="tit">title:</label>
+            <input type="text" id="tit" name="title" >
+            <label for="em">email:</label>
+            <input type="text" id="em" name="email" >
+            <label for="ph">phone:</label>
+            <input type="text" id="ph" name="phone" >
+            <label for="sa">salary:</label>
+            <input type="text" id="sa" name="salary" >
+            <label for="sc">score:</label>
+            <input type="text" id="sc" name="score" >
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+    <h3>Search staff information with name or job title.(if don't input anything it will return all of staff information. And it will show empty table when the database don't contain that staff information.)</h3>
+    <h3>Input should be exact same as below, careful with Capital OR lower case.</h3>
+    <div style="background-color: orange;">
+        <form action="search" method="GET" enctype="multipart/form-data">
+            <label for="nam">name:</label>
+            <input type="text" id="nam" name="name" >
+            <label for="titl">title:</label>
+            <input type="text" id="titl" name="title" >
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <h3>update staff information with the staffid (staffid must be exact same in the table! )</h3>
+    <div style="background-color: cyan;">
+        <form action="update" method="POST" enctype="multipart/form-data">
+            <label for="st">staffid:</label>
+            <input type="text" id="st" name="staffid">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" >
+            <label for="title">title:</label>
+            <input type="text" id="title" name="title" >
+            <label for="ema">email:</label>
+            <input type="text" id="ema" name="email" >
+            <label for="pho">phone:</label>
+            <input type="text" id="pho" name="phone" >
+            <label for="sal">salary:</label>
+            <input type="text" id="sal" name="salary" >
+            <label for="sco">score:</label>
+            <input type="text" id="sco" name="score" >
+            <input type="submit" name="submit" value="Update">
+        </form>
+    </div>
+
+    <h3>Delete staff information with the staffid</h3>
+    <div style="background-color: pink;">
+        <form action="delete" method="POST" enctype="multipart/form-data">
+            <label for="sta">staffid:</label>
+            <input type="text" id="sta" name="staffid">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+
+    <h3>Compute all staff tax(It is just multiply salary by 10 percent)</h3>
+    <div style="background-color: red;">
+        <form action="tax" method="GET" enctype="multipart/form-data">
+            <input type="submit" value="Compute">
+        </form>
+    </div>
+
+    <h3>Check the income and total salary is balance(If income greater or equal to total salary, no one will be fired. Otherwise, the lowest performance score staff will be fired.)</h3>
+    <div style="background-color: green;">
+        <form action="balance" method="POST" enctype="multipart/form-data">
+            <label for="sta">Total_income:</label>
+            <input type="text" id="tot_income" name="income">
+            <input type="submit" value="Compute">
+        </form>
+    </div>
+</body>
+
+
+<table style="width:100%">
+    <caption>Human Resource Manage</caption>
+    <tr>
+        <th>staffid</th>
+        <th>name</th>
+        <th>title</th>
+        <th>email</th>
+        <th>phone</th>
+        <th>salary</th>
+        <th>score</th>
+        <th>photo_url</th>
+    </tr>
+    {% for staff in staffs%}
+    <tr>
+        <th>{{staff['staffid']}}</th>
+        <th>{{staff['name']}}</th>
+        <th>{{staff['title']}}</th>
+        <th>{{staff['email']}}</th>
+        <th>{{staff['phone']}}</th>
+        <th>{{staff['salary']}}</th>
+        <th>{{staff['score']}}</th>
+        <th>{{staff['photo_url']}}</th>
+    </tr>
+    {% endfor %}
+</table>
+

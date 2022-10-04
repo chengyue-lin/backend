@@ -1,0 +1,37 @@
+/:
+    get:
+        summary: Return "Book library API"
+
+/books:
+    get:
+        summary: Return a Json array of book object
+        parameters:
+            author(optional) -filter the book list by author
+            language(optional)  -filter the book list by language
+            flexible(optional) -filter the book list by flexible input
+            at least put one of parameter
+
+
+    post:
+        summary: post a new book without the isbn number
+        payload:
+            a book object
+
+
+/books/<isbn>:
+
+    get:
+        summary: return a book json object with the specific isbn value, error occur when book not exist
+
+    post:
+        summary: post a new book with the isbn number
+        payload:
+            a book object
+
+    put:
+        summary: update information for the specific isbn value.
+        payload:
+            a book object (can be only the field that need to update)
+
+    delete:
+        summary: delete a book with specific isbn value

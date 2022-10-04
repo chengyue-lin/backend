@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "prefab-mapper-347607",
+  "private_key_id": "92858260c7d18b78195947a8364a838cc426a550",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXGABjFJLjpj+u\noJH1dZLa3BJ/zGq1oFSvBOpBIT9bGn8uGN2tlU6VV0Mw1YX0zg9N3TGBgfLKoHSh\nNTCDjkoFZR6YXMiju5OozoXdUSPQQtqvoQkGJ5p7362L9ZeeVChOClTShhXcMKgv\nQrHHSCVks/ofKzGoC1q87g2ZdLEEiiQCEa9RrfowIpfeuKDyQhhaCv68t0p70Uih\nIQ/ugFfvfu1YJUbZrbhJxML4NPgGT3MRdoASZdjRgPEKMKRRUdRNfe9GzU5lPL5V\nRI/IzGdcQGB7a/8pC9G1iGT+48Zf5HgzfLk/kvN4tSlNcFiIYG5Fh7Ue5/iXzUTS\nGN9Pe5fNAgMBAAECggEAND7jey2YZ1zuq31brr5eCzS49pth0Reuciu0tdi8UaX8\nPedy0xLI+XvueWpoBRhXPc/MUluM7Jxwb+biT5YskyZmedZRsvmhSnfNqr4mf5P5\nl/762OiePNgOSMiBCUeCWcBnLZK9tRQJih8+XPxAfvc7ej4s69dENU9ydLOUOthc\nC1+gR8FA8Bwv+uux7lmBT8EspN/wKjv7e1pJyX7p01Z27S0eQZnUcEWv2zA5nKKU\nN2HRPEh0F2X8M+IjzqD/ACVWkOd4rCdB2PNnm8YGTWqvkQWMZFQAmPlgZJatdk/a\nhEF4tfAxJyaXLlP6ONIW/SAB0eOaXxOecwujPH/EeQKBgQDyd84X7cM8acgZzq9q\nK+OKEsAgxrj8DRRkA1QPY4c93HEQm/meLScelahYnvhWK7ziDJLG2chB6HEEUJis\nAw+rmLuanbXesYrZXioJql2+EYium9VzrCfwRXa0zNC/xTjpZfPJTE9ML63R7Zv6\nXEiG8e3vMcZ+9ibebn1iKbD4aQKBgQDjGRg4fYOv2KT1Bmd+v2Yjw/Qm/bDv1VtL\nQJM25PJd05M9RFlvuai6pSxSeCT9y4A9YxRN6R3qR7awoDoy3uyZM/3l1n5WcI0S\nRqjZhghAhVC4XO9MBP/AV5K3tdeiqSu1E1JM5lL5Ss9QxB3FlakUc8i/otGRtfo1\nidP8vMMXxQKBgQDtryvEoTql2jxhsA6c0XE4RLE6cBOeYWP/tpOMklBc/9+GHKBR\nwol6ndJtLUjbj/yUyyaG764zjZxcUnWXCVkvKYWeR8OlDf3Cn2AuIWfLjnyiTfis\nb7KnAjEfgzePBdKIWXzlc3y4fnSyOW6Rui0Ou9I2jGC8zKfFnCIlPCFTIQKBgHNN\n24FbIRCYg/Cwhr3Q+lAwfveJGVw8TPUhXV2i0vgWo4yY9nwGnQffM2jP/aAqwfrp\nIncIZJr+PGDjiYkorKKAxmn7BPxoewgLflGrfucbiUeCUDGd3CjRjfnexxScpkdy\n/vdyfjB67lYIrUET4twyiXvbdGJyLg8e4tZRFREtAoGBAJ7CPB7TNDWXSlO1c5nX\niuhCfjX2CHoiL//4mAUKJezZD/xwHWZQwC/WrLzknJiuJ+MZW0n89hISsQny2dxQ\n6okAHUz6nNyX5lQgpIzx77D4HgYIVXZgBVO8cjcQ3vutP4f5S6eIEuaLz42pGB70\niVmE3oIPujO31TUqP/fy/ENS\n-----END PRIVATE KEY-----\n",
+  "client_email": "prefab-mapper-347607@appspot.gserviceaccount.com",
+  "client_id": "110057763520288723993",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prefab-mapper-347607%40appspot.gserviceaccount.com"
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+<head>
+    <style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 15px;
+        }
+    th{
+        text-align: left;
+    }
+    caption {
+        font-size: 160%;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<h1>Here is your tax result!~ </h1>
+<br> return to dashboard <a href =/analytics/dashboard>page</a>
+<table style="width:100%">
+    <caption>Human Resource Manage</caption>
+    <tr>
+        <th>staffid</th>
+        <th>name</th>
+        <th>salary</th>
+        <th>tax</th>
+    </tr>
+    {% for staff in staffs%}
+    <tr>
+        <th>{{staff['staffid']}}</th>
+        <th>{{staff['name']}}</th>
+        <th>{{staff['salary']}}</th>
+        <th>{{staff['tax']}}</th>
+    </tr>
+    {% endfor %}
+</table>

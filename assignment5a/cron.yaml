@@ -1,0 +1,6 @@
+cron:
+  - description: "send the email every hour"
+    url: /tasks
+    schedule: every 1 hours
+    target: tasks
+

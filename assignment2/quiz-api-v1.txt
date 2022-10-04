@@ -1,0 +1,93 @@
+Backend  assignment 2 b
+// group member: Yan Zhang, Chengyue Lin
+
+
+/auth/login:
+    post:
+        summary: Login for a user
+/auth/logout:
+    post:
+        summary: Log out
+/auth/password/reset:
+    post:
+        summary: Change password of a user
+/auth/register:
+    post:
+        summary: Signing up a new user
+
+
+/users:
+    get:
+        summary: Returns a list of users.
+        parameter:
+            - limit: limit to the number of users returned
+    put:
+        summary: Bulk update of list of users
+    delete:
+        summary: delete all user information
+
+
+/users/{userId}:
+    get:
+        summary: Returns a user's info by ID.
+        parameters:
+            - userId
+    put:
+        summary: Updates user info by ID
+    delete:
+        summary: Delete the user
+
+/cardsets:
+    get:
+        summary: Return list of flashcard sets
+        parameter:
+            - limit: limit the number of results
+            - page: pagination page number, if we are doing server side pagination
+    post:
+        summary: Create a new cardset
+    delete:
+        summary: Delete all flashcard sets
+
+/cardsets/{cardsetID}:
+    get:
+        summary: Return a card set information by ID
+    put:
+        summary: Make changes to a card set by ID
+    delete:
+        summary: Delete the card set
+
+/cardsets/{cardsetID}/cards:
+    get:
+        summary: Return all cards in a card set
+        parameters:
+            - limit: limit the number of results
+            - page: pagination page number, if we are doing server side pagination
+            - export: one of {csv, xml}, return falshcards in a format specified (reference: https://memjogger.com/help/api)
+    post:
+        summary: Add a new flash card to a card set
+    delete:
+        summary: Delete all cards in a card set
+
+/cardsets/{cardSetID}/cards/{cardID}:
+    get:
+        summary: Get a particular card in card set
+    put:
+        summary: Update a particular card in card set
+    delete:
+        summary: Delete a particular card in card set
+
+/categories:
+    get:
+        summary: Get all flashcard categories
+    post:
+        summary: Make a new flashcard category
+    delete:
+        summary: Delete all flashcard categories
+
+/categories/{categoryId}:
+    get:
+        summary: Get flashcard sets under a particular category
+    put:
+        summary: Change descriptions of a flashcard category
+    delete:
+        summary: Delete a particular flashcard category

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+<head>
+    <style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 15px;
+        }
+    th{
+        text-align: left;
+    }
+    caption {
+        font-size: 160%;
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+
+<table style="width:100%">
+    <caption>Book-Library-API</caption>
+    <tr>
+        <th>ISBN</th>
+        <th>Author</th>
+        <th>image_public_url</th>
+        <th>Language</th>
+        <th>Title</th>
+        <th>Page</th>
+        <th>Year</th>
+    </tr>
+    {% for book in books%}
+    <tr>
+        <th>{{book['isbn']}}</th>
+        <th>{{book['author']}}</th>
+        <th>{{book['image_public_url']}}</th>
+        <th>{{book['language']}}</th>
+        <th>{{book['title']}}</th>
+        <th>{{book['page']}}</th>
+        <th>{{book['year']}}</th>
+    </tr>
+    {% endfor %}
+</table>
+
